@@ -1,9 +1,12 @@
 import "./App.css";
+import Banner from "./Components/Banner/Banner";
 
 function App() {
-  return <>
-  <h2>This is a marketing page</h2>
-  </>;
+  return (
+    <>
+      <Banner></Banner>
+    </>
+  );
 }
 
 export default App;
