@@ -3,14 +3,17 @@ import { FaStar } from "react-icons/fa";
 
 const Banner = () => {
   return (
-    <div className="bg-linear-to-b from-[#CEFFB8] via-[#91F2CF] to-[#3CFFCE] py-10 h-[120%]">
+    <div className="bg-linear-to-b from-[#CEFFB8] via-[#91F2CF] to-[#3CFFCE] py-10 h-[140%] pt-5">
       <div className="text-center space-y-5 container mx-auto ">
         <span className="flex items-center text-xl gap-2 font-medium justify-center py-4">
           <span>
             {" "}
             <FaStar />
           </span>
-          4.5 (124 reviews)
+          <span>
+            {" "}
+            4.5 <span className="opacity-60">(124 reviews)</span>
+          </span>
         </span>
         <div className="space-y-4">
           <h3 className="text-6xl md:text-7xl lg:text-8xl font-bold">
