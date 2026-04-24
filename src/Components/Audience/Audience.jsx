@@ -26,7 +26,7 @@ const Audience = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row items-center gap-10 justify-center">
-          <img src={ManImage} className="w-100" />
+          <img src={ManImage} className="w-100  transition hover:-translate-y-0.5" />
           <h4 className="text-3xl font-bold text-center md:text-start">
             Scale ad spend without efficiency loss
           </h4>
