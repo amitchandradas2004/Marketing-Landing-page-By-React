@@ -1,6 +1,7 @@
 import React from "react";
 import SmallMan from "../../assets/smallman.png";
 import Table from "../../assets/table.png";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 const Word = () => {
   return (
     <div className="bg-linear-to-b from-[#CEFFB8] via-[#91F2CF] to-[#3CFFCE] py-10">
@@ -8,7 +9,7 @@ const Word = () => {
         <h3 className="text-5xl md:text-6xl font-bold text-center py-5">
           Word on the street
         </h3>
-        <div className="flex flex-col md:flex-row justify-between items-center md:h-80 lg:h-100 p-5 md:p-0 rounded-2xl bg-white overflow-hidden mx-5 md:mx-0">
+        <div className="flex flex-col md:flex-row justify-between items-center md:h-80 lg:h-100 p-5 md:p-0 rounded-2xl bg-white overflow-hidden mx-5 md:mx-0 shadow-2xl">
           <div className="left w-full md:w-1/2 space-y-4 pl-5">
             <div>
               <p className="text-xs lg:text-xl font-medium">
@@ -37,6 +38,14 @@ const Word = () => {
             />
           </div>
         </div>
+      </div>
+      <div className="flex items-center gap-2 justify-center py-5">
+        <span className="bg-black text-white rounded-full p-2">
+          <FaChevronLeft />
+        </span>
+        <span className="bg-black text-white rounded-full p-2">
+          <FaChevronRight />
+        </span>
       </div>
     </div>
   );
