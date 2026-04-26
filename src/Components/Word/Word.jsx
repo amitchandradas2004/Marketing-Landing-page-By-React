@@ -64,10 +64,10 @@ const Word = () => {
         </button>
         <button className="btn btn-neutral rounded-xl">Get a demo</button>
       </div>
-      <div className="absolute bottom-50 md:bottom-40 lg:bottom-60 left-5 md:left-10">
+      <div className="absolute bottom-40 md:bottom-40 lg:bottom-60 left-5 md:left-10">
         <img src={FreeImage} className="w-20 select-none" />
       </div>
-      <div className="absolute bottom-50 md:bottom-45 lg:bottom-60 right-10">
+      <div className="absolute bottom-40 md:bottom-45 lg:bottom-60 right-10">
         <span className="text-5xl">
           <RiGeminiFill />
         </span>
