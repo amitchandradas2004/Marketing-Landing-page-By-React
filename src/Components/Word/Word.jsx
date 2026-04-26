@@ -2,10 +2,12 @@ import React from "react";
 import SmallMan from "../../assets/smallman.png";
 import Table from "../../assets/table.png";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import FreeImage from "../../assets/Free.png";
+import { RiGeminiFill } from "react-icons/ri";
 const Word = () => {
   return (
-    <div className="bg-linear-to-b from-[#CEFFB8] via-[#91F2CF] to-[#3CFFCE] py-10">
-      <div className="container  mx-auto">
+    <div className="bg-linear-to-b from-[#CEFFB8] via-[#91F2CF] to-[#3CFFCE] py-10 relative">
+      <div className="container mx-auto">
         <h3 className="text-5xl md:text-6xl font-bold text-center py-5">
           Word on the street
         </h3>
@@ -34,7 +36,7 @@ const Word = () => {
           <div className="right w-full md:w-1/2 pt-5 md:pt-0">
             <img
               src={Table}
-              className="w-full h-full object-cover rounded-2xl md:rounded-none"
+              className="w-full h-full object-cover rounded-2xl md:rounded-none select-none"
             />
           </div>
         </div>
@@ -45,6 +47,29 @@ const Word = () => {
         </span>
         <span className="bg-black text-white rounded-full p-2">
           <FaChevronRight />
+        </span>
+      </div>
+      <div className="text-center py-5 space-y-3">
+        <h3 className="text-6xl font-bold">
+          Ready to get more out of your ad spend?
+        </h3>
+        <p className="font-medium">
+          Reach new customers and unlock more efficient marketing spend with
+          predictive intelligence.
+        </p>
+      </div>
+      <div className="flex justify-center space-x-3 py-5">
+        <button className="btn rounded-xl bg-transparent border border-gray-600">
+          Start free trial
+        </button>
+        <button className="btn btn-neutral rounded-xl">Get a demo</button>
+      </div>
+      <div className="absolute bottom-50 md:bottom-40 lg:bottom-60 left-5 md:left-10">
+        <img src={FreeImage} className="w-20 select-none" />
+      </div>
+      <div className="absolute bottom-50 md:bottom-45 lg:bottom-60 right-10">
+        <span className="text-5xl">
+          <RiGeminiFill />
         </span>
       </div>
     </div>
